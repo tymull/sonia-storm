@@ -25,6 +25,30 @@ python -m http.server 8000
 
 High score is saved automatically in the browser.
 
+## ⭐ Power-ups & the boss
+
+- **📱 Phone** — appears occasionally; grab it to "call" backup (GiGi, PopPop,
+  Sariah, Katie, or Claire) and instantly knock down the **Chaos** meter.
+- **🍼 Bottle** — triggers **Nursing Time**: three bottles orbit Sonia and any
+  baby she touches falls asleep (💤) for a few seconds, going quiet.
+- **🥤 Swig cup** — dropped by Ty; grab it for **Mama Rage**: Sonia powers up
+  (2× speed) and can take out the boss on contact.
+- **⚠️ Ty (BOSS)** — every so often "BOSS INCOMING" flashes and Ty wanders in to
+  "help." Any poop/fire he touches **triples**, and he wakes sleeping babies.
+  Hit him while in Mama Rage to clear him out until the next boss wave.
+
+Chaos rises only while too many messes are on screen at once; clearing them (or
+calling for backup) brings it back down.
+
+## 🎵 Game-over music (optional)
+
+The "OVERWHELMED!" screen can play a Pavarotti clip. Drop an audio file named
+`vesti-la-giubba.mp3` (or `.m4a`) into `assets/audio/` — see
+`assets/audio/README.txt` for the exact filenames it looks for. Without a file,
+it just plays the built-in synth jingle. All the other sound effects (baby
+cries, Ty's sad-trombone "womp," cleaning, power-ups) are generated in-browser,
+no files needed.
+
 ## 🌐 Putting it online (like the example sites)
 
 It's a fully static site (one HTML file + the `assets/` folder), so any static host works:
